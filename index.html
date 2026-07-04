@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <title>Flip the coin | devChallenges.io</title>
+
+  </head>
+  <body>
+    <main class="game">
+      <h1 class="game__title">Flip the coin</h1>
+      <p class="game__instruction">
+        Press the coin or the button to flip the coin
+      </p>
+
+      <div class="coin-wrapper">
+        <button
+          class="coin"
+          id="coin"
+          type="button"
+          aria-label="Flip the coin"
+        >
+          <img src="./assets/images/heads.svg" alt="" id="coin-image" />
+        </button>
+        <img
+          class="coin-wrapper__shadow"
+          src="./assets/images/shadow.svg"
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
+
+      <p class="game__result" id="result">Heads</p>
+
+      <button class="game__button" id="random-btn" type="button">
+        RANDOM
+      </button>
+    </main>
+
+    <div class="author-info">
+      Coded by <a href="#">Brayan Barroso</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+      
+  </body>
+</html>
