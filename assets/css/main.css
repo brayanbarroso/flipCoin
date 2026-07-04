@@ -18,7 +18,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--bg-color);
-  font-family: "Fredoka", "Segoe UI", sans-serif;
+  font-family: "Kanit", sans-serif;
   color: var(--text-color);
 }
 
@@ -31,15 +31,18 @@ body {
 }
 
 .game__title {
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 700;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
   line-height: 1.2;
-  text-shadow: 0 3px 0 rgba(0, 0, 0, 0.25);
+  /* text-shadow: 0 3px 0 rgba(0, 0, 0, 0.25); */
+  text-shadow: 2px 2px 0px #35383f;
+-webkit-text-stroke-width:5px;
+-webkit-text-stroke-color: #35383f;
   margin-bottom: 12px;
 }
 
 .game__instruction {
-  font-size: clamp(0.95rem, 2.5vw, 1.125rem);
+  font-size: clamp(0.95rem, 2.5vw, 1.5rem);
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 48px;
@@ -91,7 +94,7 @@ body {
 
 .game__button {
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--text-color);
@@ -103,6 +106,7 @@ body {
   transition:
     background-color 0.15s ease,
     transform 0.15s ease;
+    box-shadow: 0px 4px 0px 0px #23649b;
 }
 
 .game__button:hover {
@@ -146,4 +150,10 @@ body {
 
 .author-info a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .game__title {
+    -webkit-text-stroke-width:2px;
+  }
 }
