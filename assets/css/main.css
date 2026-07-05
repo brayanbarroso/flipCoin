@@ -5,9 +5,9 @@
 }
 
 :root {
-  --bg-color: #3d465c;
-  --text-color: #ffffff;
-  --button-color: #2073b7;
+  --bg-color: #404A65;
+  --text-color: #ECEDF0;
+  --button-color: #1F6FB0;
   --button-hover: #1a5f96;
 }
 
@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-top: 40px;
   background-color: var(--bg-color);
   font-family: "Kanit", sans-serif;
   color: var(--text-color);
@@ -33,11 +33,11 @@ body {
 .game__title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 600;
+  font-stretch: condensed;
   line-height: 1.2;
   /* text-shadow: 0 3px 0 rgba(0, 0, 0, 0.25); */
   text-shadow: 2px 2px 0px #35383f;
--webkit-text-stroke-width:5px;
--webkit-text-stroke-color: #35383f;
+-webkit-text-stroke:3px #35383F;
   margin-bottom: 12px;
 }
 
